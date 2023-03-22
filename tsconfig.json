@@ -1,0 +1,7 @@
+// TypeScript config that only applies to the workspace root
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"noEmit": true
+	}
+}

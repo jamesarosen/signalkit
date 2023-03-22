@@ -1,0 +1,47 @@
+{
+	"author": {
+		"name": "James A Rosen",
+		"email": "gh@confident.technology",
+		"url": "https://confident.technology"
+	},
+	"bugs": "https://github.com/jamesarosen/signalkit/issues",
+	"description": "Workspace for signalkit libraries",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.51.0",
+		"@typescript-eslint/parser": "^5.51.0",
+		"eslint": "^8.33.0",
+		"eslint-config-prettier": "^8.6.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^2.8.3",
+		"typescript": "^4.9.5"
+	},
+	"engines": {
+		"node": ">=18 <19",
+		"pnpm": ">=7.27.0 <8"
+	},
+	"keywords": [
+		"workspace",
+		"signals"
+	],
+	"license": "Apache-2.0",
+	"main": "index.js",
+	"name": "signalkit-workspace",
+	"packageManager": "pnpm@7.27.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jamesarosen/signalkit"
+	},
+	"scripts": {
+		"build": "pnpm run --parallel build",
+		"lint": "pnpm run lint:package && pnpm run lint:typecheck && pnpm run lint:js",
+		"lint:js": "pnpm exec eslint --ext .cjs,.js,.jsx,.mjs,.ts,.tsx .",
+		"lint:typecheck": "pnpm run --parallel tsc",
+		"lint:package": "pnpm ls --depth 1 2>&1 1>/dev/null && echo 'package.json valid'"
+	},
+	"type": "module",
+	"version": "0.0.0",
+	"workspaces": [
+		"packages/*"
+	]
+}
