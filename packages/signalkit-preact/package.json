@@ -1,0 +1,31 @@
+{
+	"author": {
+		"name": "James A Rosen",
+		"email": "gh@confident.technology",
+		"url": "https://confident.technology"
+	},
+	"bugs": "https://github.com/jamesarosen/signalkit/issues",
+	"description": "signalkit implementation for @preact/signals",
+	"engines": {
+		"node": ">=18 <19",
+		"pnpm": ">=7.27.0 <8"
+	},
+	"keywords": [
+		"workspace",
+		"signals",
+		"preact"
+	],
+	"license": "Apache-2.0",
+	"main": "index.js",
+	"name": "signalkit-preact",
+	"packageManager": "pnpm@7.27.0",
+	"peerDependencies": {
+		"@preact/signals-core": "^1.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jamesarosen/signalkit"
+	},
+	"type": "module",
+	"version": "0.1.0"
+}

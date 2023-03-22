@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@preact/signals-core': ^1.2.3
       '@types/jest': ^29.5.0
       '@typescript-eslint/eslint-plugin': ^5.51.0
       '@typescript-eslint/parser': ^5.51.0
@@ -15,6 +16,7 @@ importers:
       ts-jest: ^29.0.5
       typescript: ^4.9.5
     devDependencies:
+      '@preact/signals-core': 1.2.3
       '@types/jest': 29.5.0
       '@typescript-eslint/eslint-plugin': 5.56.0_iskin7c6dxqunwflhstekcjqmq
       '@typescript-eslint/parser': 5.56.0_vgl77cfdswitgr47lm5swmv43m
@@ -715,6 +717,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@preact/signals-core/1.2.3:
+    resolution: {integrity: sha512-Kui4p7PMcEQevBgsTO0JBo3gyQ88Q3qzEvsVCuSp11t0JcN4DmGCTJcGRVSCq7Bn7lGxJBO+57jNSzDoDJ+QmA==}
     dev: true
 
   /@sinclair/typebox/0.25.24:
